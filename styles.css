@@ -1,0 +1,32 @@
+body {
+    background-color:black;
+}
+h1 {
+    color:cornsilk;
+    text-align: center;
+    font-size: 120px;
+}
+    
+#mobileView {
+    background-color:cornsilk;
+    display: block;
+    height: 50px;
+    margin: 0 auto;
+    padding-top: -50px;
+    position: relative;
+    width: 200px;
+}
+
+#waves {
+    position: relative;
+    top: -40px;
+    padding-bottom: 4000px;
+    display: grid;
+    height: 100%;
+}
+
+.center {
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+}
