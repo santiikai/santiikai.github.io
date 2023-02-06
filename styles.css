@@ -1,32 +1,77 @@
-body {
+@media only screen and (max-device-width: 1366px) {
+    .parallax-container {
+      background-attachment: scroll;
+    }
+  } 
+.wrapper {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 2px;
+  }
+  
+/* body {
     background-color:black;
+} */
+
+.section {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    color: black;
 }
-h1 {
+
+.parallax::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: translatez(-1px) scale (1.5);
+    background-size: 100%;
+    z-index: -1;
+}
+
+.static {
+    background-color: cornsilk;
+}
+
+.intro::after {
+    background-image: url("images/ocean-waves-from-above-1583095658ztE.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.part1::after {
+    background-image: url("images/waves.jpeg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#title {
     color:cornsilk;
+    position: absolute;
     text-align: center;
-    font-size: 120px;
-}
-    
-#mobileView {
-    background-color:cornsilk;
-    display: block;
-    height: 50px;
-    margin: 0 auto;
-    padding-top: -50px;
-    position: relative;
-    width: 200px;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 225px;
 }
 
-#waves {
-    position: relative;
-    top: -40px;
-    padding-bottom: 4000px;
-    display: grid;
-    height: 100%;
+.intro-text {
+    color: cornsilk;
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-.center {
-    max-width: 100%;
-    max-height: 100%;
-    margin: auto;
+#journey {
+    font-size: 100px;
 }
